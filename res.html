@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Cafeteria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student's Cafeteria</h1>
+        </header>
+        <main>
+            <section class="menu">
+                <h2>Our Menu</h2>
+                <div class="menu-item">
+                    <img src="images/burger.jpg" alt="Burger">
+                    <div>
+                        <h3>Classic Burger</h3>
+                        <p>₹299</p>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/pizza.jpg" alt="Pizza">
+                    <div>
+                        <h3>Margherita Pizza</h3>
+                        <p>₹499</p>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/pasta.jpg" alt="Pasta">
+                    <div>
+                        <h3>Spaghetti Carbonara</h3>
+                        <p>₹399</p>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/salad.jpg" alt="Salad">
+                    <div>
+                        <h3>Caesar Salad</h3>
+                        <p>₹199</p>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/sushi.jpg" alt="Sushi">
+                    <div>
+                        <h3>Sushi Platter</h3>
+                        <p>₹599</p>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/steak.jpg" alt="Steak">
+                    <div>
+                        <h3>Grilled Steak</h3>
+                        <p>₹799</p>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/dessert.jpg" alt="Dessert">
+                    <div>
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>₹249</p>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <button class="cart-btn" onclick="viewCart()">
+                <img src="images/cart.png" alt="Cart" class="cart-icon"> View Cart
+            </button>
+            <button class="pay-btn" onclick="calculateTotal()">Total Pay</button>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
